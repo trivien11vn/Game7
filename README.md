@@ -1,1 +1,1 @@
-___ SHOOTING GAME ____
+__SHOOTING GAME__
