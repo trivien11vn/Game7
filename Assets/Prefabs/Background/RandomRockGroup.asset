@@ -37,5 +37,8 @@ MonoBehaviour:
   m_CanChangeZPosition: 0
   m_FloodFillContiguousOnly: 1
   m_Anchor: {x: 0.5, y: 0.5, z: 0.5}
-  m_Prefabs: []
+  m_Prefabs:
+  - {fileID: 2668361167389053080, guid: 4e9d030360093cd45a97552d85d3da0d, type: 3}
+  - {fileID: 6131314722482266326, guid: 76474c37356e80840990ff59f105f388, type: 3}
+  - {fileID: 8943600658796933200, guid: a9ab2a1e002cdfb4abc3a5eed8a8b8ed, type: 3}
   m_PerlinScale: 0.5
