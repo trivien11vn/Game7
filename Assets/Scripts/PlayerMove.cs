@@ -12,10 +12,9 @@ public class PlayerMove : MonoBehaviour
 
     private Rigidbody2D rb;
     public Vector3 moveInput;
-    private Animator animator;
-
+    public Animator animator;
+    public SpriteRenderer characterSprite;
     private void Start(){
-        animator = GetComponent<Animator>();
     }
     private void Update(){
         moveInput.x = Input.GetAxis("Horizontal"); //
@@ -24,10 +23,10 @@ public class PlayerMove : MonoBehaviour
         animator.SetFloat("Speed",moveInput.sqrMagnitude);
         if(moveInput.x != 0){
             if(moveInput.x > 0){
-                transform.localScale = new Vector3(0.146989f,0.1711031f,0f);
+                characterSprite.transform.localScale = new Vector3(1f,1f,0f);
             }
             else{
-                transform.localScale = new Vector3(-0.146989f,0.1711031f,0f);
+                characterSprite.transform.localScale = new Vector3(-1f,1f,0f);
             }
         }
         if(Input.GetKeyDown(KeyCode.Space) && rollTime <= 0){
